@@ -1,0 +1,13 @@
+# Build output
+output/
+
+# Real constants (contains secrets)
+build/constants.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
