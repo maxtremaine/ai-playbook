@@ -58,7 +58,7 @@ The files in `instructions/` and `prompts/` use placeholders like `[PERSONAL_BIO
 To run it:
 
 ```bash
-python -m build
+python3 build
 ```
 
 This keeps the source templates portable and the resolved output private. The `output/` directory should also be in your `.gitignore`, as it is here.
