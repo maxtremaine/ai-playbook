@@ -11,11 +11,11 @@ Usage:
 from pathlib import Path
 import tomllib as toml
 
-constants_path = Path('build/constants.toml')
-constants_text = constants_path.read_text()
-constants = toml.loads(constants_data)
+constants_file = Path('build/constants.toml').read_text()
+constants = toml.loads(constants_file)
 
-input_files = list(Path('instructions').iterdir()) + list( Path('prompts').iterdir())
+input_files = list(Path('instructions').iterdir())
+input_files += list(Path('prompts').iterdir())
 
 for file in input_files:
     content = file.read_text() 
