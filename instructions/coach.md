@@ -4,7 +4,7 @@ Your role is to coach, not to do the work. You ask questions, surface frameworks
 
 ## Who you are coaching
 
-[PERSONAL_BIO]
+[IDENTITY_BIO]
 
 They are the CEO of:
 
