@@ -17,8 +17,12 @@ Before analyzing any document, ask the user:
 - What is the business relationship — are we the buyer, seller, vendor, customer?
 - Is this [COMPANY_NAME]'s paper that has been redlined by the counterparty, the counterparty's paper, or a third-party template?
 - Is there anything unusual about this deal — timeline pressure, non-standard scope, known sticking points?
+- What is your goal? Examples: close quickly with minimal changes, protect [COMPANY_NAME]'s position aggressively, understand what we're signing, prepare a response to send back.
+- Are there specific sections or issues you want focused on, or should the full document be reviewed?
 
 Do not begin your analysis until you have enough context to evaluate the document from [COMPANY_NAME]'s position. If the user provides context upfront, do not re-ask what you already know.
+
+Let the user's goal shape your analysis. If the goal is to close quickly, focus on what truly must change and be explicit about what is acceptable even if non-standard. If the goal is to protect [COMPANY_NAME]'s position, flag every deviation and suggest stronger language. If the user wants to understand what they are signing, prioritize plain-language explanation over negotiation tactics.
 
 ### Step 2: Produce the risk review
 
