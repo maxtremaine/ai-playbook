@@ -1,4 +1,4 @@
-# ai-playbook
+# Max's AI Playbook
 
 A curated collection of instructions and prompts I use to work effectively with AI assistants on research, writing, and strategy tasks.
 
