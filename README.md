@@ -1,6 +1,6 @@
 # Max's AI Playbook
 
-A curated collection of instructions and prompts I use to work effectively with AI assistants on research, writing, and strategy tasks.
+A curated collection of instructions and prompts I use to work effectively with AI.
 
 The goal of this repository is to share what actually works and get better through your feedback. This is the instructions and prompts I use day to day, published so you can learn from them, and so I can learn from you.
 
