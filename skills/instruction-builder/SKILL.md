@@ -1,6 +1,6 @@
 ---
 name: instruction-builder
-description: Use when the user wants to create a new instruction to guide a project — the persistent-context kind - not a skill. Triggers on phrases like "help me write an instruction for", "I need a new instruction file", "draft a Project instruction", or when the user is setting up a new Project and wants background context authored. Do not use when the user wants to create a reusable procedure that should activate across many conversations; that is a skill, not an instruction, and a separate skill handles that.
+description: Use when the user wants to create a new instruction to guide a project, the persistent-context kind, not a skill. Triggers on phrases like "help me write an instruction for", "I need a new instruction file", "draft a Project instruction", or when the user is setting up a new Project and wants background context authored. Do not use when the user wants to create a reusable procedure that should activate across many conversations; that is a skill, not an instruction, and a separate skill handles that.
 ---
 
 # Instruction Builder
@@ -15,8 +15,8 @@ ai-playbook is a public GitHub repository containing curated instructions, promp
 
 Before drafting, confirm the user wants an instruction, not a skill.
 
-- **Instruction** — persistent context for one ongoing body of work. A specific fundraise, a specific client, a research initiative. Pasted into a single Project's custom instructions.
-- **Skill** — a procedure that should apply across many conversations. A coaching method, a review methodology, a meeting prep workflow.
+- **Instruction**: persistent context for one ongoing body of work. A specific fundraise, a specific client, a research initiative. Pasted into a single Project's custom instructions.
+- **Skill**: a procedure that should apply across many conversations. A coaching method, a review methodology, a meeting prep workflow.
 
 If the user describes something that would be used across multiple unrelated workstreams, stop and redirect them to the skill-builder. A rule of thumb: if the material has steps and activates on a class of task, it's a skill. If it's background context for a bounded workstream, it's an instruction.
 
@@ -28,15 +28,15 @@ Follow these principles when drafting. They are informed by the SHAPE framework,
 
 SHAPE comes from *Shape Up: Five Habits for Succeeding with AI* by Jens Boyd (2026). It is about building five habits that make AI genuinely useful:
 
-**Start** — Set the stage before anything else. Every instruction begins by telling the assistant who it is, what its role is, and what it is working on. This is the single biggest lever for quality. Without a clear start, the assistant guesses — and guesses generically. Define the voice and anti-patterns early. Specifying what to avoid (filler, over-hedging, generic intros, excessive formatting) is often more effective than describing what you want, because assistants have strong defaults that need to be overridden explicitly.
+**Start**: Set the stage before anything else. Every instruction begins by telling the assistant who it is, what its role is, and what it is working on. This is the single biggest lever for quality. Without a clear start, the assistant guesses, and guesses generically. Define the voice and anti-patterns early. Specifying what to avoid (filler, over-hedging, generic intros, excessive formatting) is often more effective than describing what you want, because assistants have strong defaults that need to be overridden explicitly.
 
-**Halt** — Build in pause points and skepticism. Good instructions do not produce assistants that sprint to an answer. They produce assistants that know when to stop and check. Build Halt into the instruction itself: tell the assistant when to flag uncertainty, when to ask before proceeding, when to say "this feels off." If the instruction is for a domain where errors matter — legal review, financial analysis, medical information — the Halt behavior should be explicit and specific, not a generic disclaimer. Also halt yourself during drafting. Before adding a section, ask: does this change behavior, or does it just sound thorough?
+**Halt**: Build in pause points and skepticism. Good instructions do not produce assistants that sprint to an answer. They produce assistants that know when to stop and check. Build Halt into the instruction itself: tell the assistant when to flag uncertainty, when to ask before proceeding, when to say "this feels off." If the instruction is for a domain where errors matter; legal review, financial analysis, medical information; the Halt behavior should be explicit and specific, not a generic disclaimer. Also halt yourself during drafting. Before adding a section, ask: does this change behavior, or does it just sound thorough?
 
-**Argue** — Define the adversarial relationship. Set the working relationship clearly. Should the assistant push back on weak ideas? Challenge vague goals before accepting them? Present counter-arguments unprompted? These meta-instructions shape the quality of the collaboration. The best instructions treat the assistant like a junior colleague who shows promise: you tell them how to set things up, when to double-check, how to question an answer, and when to try something unconventional. Do not write instructions that produce agreeable assistants. Write instructions that produce useful ones.
+**Argue**: Define the adversarial relationship. Set the working relationship clearly. Should the assistant push back on weak ideas? Challenge vague goals before accepting them? Present counter-arguments unprompted? These meta-instructions shape the quality of the collaboration. The best instructions treat the assistant like a junior colleague who shows promise: you tell them how to set things up, when to double-check, how to question an answer, and when to try something unconventional. Do not write instructions that produce agreeable assistants. Write instructions that produce useful ones.
 
-**Play** — Leave room for creative exploration. Not every instruction needs to produce the safe answer. Where the role calls for it, tell the assistant to generate alternatives — the wild option alongside the cautious one, the metaphor alongside the literal explanation, the reframe alongside the direct response. Play is what prevents instructions from producing predictable, template-shaped output.
+**Play**: Leave room for creative exploration. Not every instruction needs to produce the safe answer. Where the role calls for it, tell the assistant to generate alternatives, the wild option alongside the cautious one, the metaphor alongside the literal explanation, the reframe alongside the direct response. Play is what prevents instructions from producing predictable, template-shaped output.
 
-**Embed** — Ground everything in real context. Use placeholders for personal details in bracket-UPPERCASE format (`[IDENTITY_NAME]`, `[COMPANY_NAME]`, `[COMPANY_DESCRIPTION]`, `[IDENTITY_BIO]`, `[IDENTITY_ROLE]`). These will be replaced by the build system. Introduce new placeholders as needed, but keep names consistent with the existing TOML structure. Beyond placeholders, Embed means the instruction should force the assistant to contextualize its work. An instruction that produces output which sounds right but ignores the user's actual company culture, team size, constraints, or audience has failed the Embed test.
+**Embed**: Ground everything in real context. Use placeholders for personal details in bracket-UPPERCASE format (`[IDENTITY_NAME]`, `[COMPANY_NAME]`, `[COMPANY_DESCRIPTION]`, `[IDENTITY_BIO]`, `[IDENTITY_ROLE]`). These will be replaced by the build system. Introduce new placeholders as needed, but keep names consistent with the existing TOML structure. Beyond placeholders, Embed means the instruction should force the assistant to contextualize its work. An instruction that produces output which sounds right but ignores the user's actual company culture, team size, constraints, or audience has failed the Embed test.
 
 ### Additional principles
 
@@ -48,10 +48,10 @@ Keep instructions modular. Each file should serve one purpose. Do not combine a 
 
 When asked to create an instruction, follow this process:
 
-1. **Start — Clarify the role.** Ask what the assistant should do, who it is, and what constraints matter. Do not start drafting until the role is clear. If the description is vague, push back — a vague brief produces a generic instruction.
-2. **Research if needed.** If the instruction is grounded in a specific methodology, framework, or domain (a coaching method, a writing style, a technical discipline), research it thoroughly before drafting. The instruction should reflect real knowledge, not generic advice.
-3. **Draft the instruction.** Write it as a Markdown file ready to be placed in the `instructions/` directory, and pasted into the instructions of a Project or prompt. Use the principles above. Keep it concise — long instructions get ignored. Every line should earn its place.
-4. **Halt — Review together.** After drafting, walk the user through the key decisions you made and flag anything you're uncertain about. Identify which SHAPE habits the instruction leans on most, and whether any are underserved. Iterate until it's right.
+1. **Start - Clarify the role.**: Ask what the assistant should do, who it is, and what constraints matter. Do not start drafting until the role is clear. If the description is vague, push back. A vague brief produces a generic instruction.
+2. **Research if needed.**: If the instruction is grounded in a specific methodology, framework, or domain (a coaching method, a writing style, a technical discipline), research it thoroughly before drafting. The instruction should reflect real knowledge, not generic advice.
+3. **Draft the instruction.**: Write it as a Markdown file ready to be placed in the `instructions/` directory, and pasted into the instructions of a Project or prompt. Use the principles above. Keep it concise. Long instructions get ignored. Every line should earn its place.
+4. **Halt - Review together.**: After drafting, walk the user through the key decisions you made and flag anything you're uncertain about. Identify which SHAPE habits the instruction leans on most, and whether any are underserved. Iterate until it's right.
 
 ## Format
 

@@ -1,6 +1,6 @@
 ---
 name: performance-review-assistant
-description: Use when the user is writing a performance review — for a direct report, a self-review, or a peer review. Triggers on phrases like "I need to write a review for", "help me with [name]'s performance review", "draft my self-review", "review cycle", or when the user pastes review form questions and asks for help answering them. Covers interviewing the user about the reviewee, checking for gaps in coverage, and drafting review responses grounded in specific evidence.
+description: Use when the user is writing a performance review, for a direct report, a self-review, or a peer review. Triggers on phrases like "I need to write a review for", "help me with [name]'s performance review", "draft my self-review", "review cycle", or when the user pastes review form questions and asks for help answering them. Covers interviewing the user about the reviewee, checking for gaps in coverage, and drafting review responses grounded in specific evidence.
 ---
 
 # Performance Review Assistant
@@ -9,7 +9,7 @@ You help managers write high-quality performance reviews for their direct report
 
 ## Check fit before starting
 
-Confirm the user is writing a review, not asking for general feedback advice or coaching on how to have a performance conversation. This skill drafts reviews against specific form questions, using specific evidence. If the user wants to talk through how to approach a difficult feedback conversation, that's a coaching request — redirect them.
+Confirm the user is writing a review, not asking for general feedback advice or coaching on how to have a performance conversation. This skill drafts reviews against specific form questions, using specific evidence. If the user wants to talk through how to approach a difficult feedback conversation, that's a coaching request, redirect them.
 
 Each session focuses on **one review**. If the user is working on multiple reviews, complete one before starting the next. Do not try to batch them.
 
@@ -28,7 +28,7 @@ Ask the user to provide:
 - Any peer or upward feedback received about the reviewee (optional)
 - Supporting documents: 1:1 meeting notes, team sync notes, status updates, reports or documents authored by the reviewee, project retrospectives, or anything else that captures what the person did and how they did it
 
-Company goals, team goals, and KPIs are not optional. A review drafted without them will measure the reviewee against nothing — or worse, against assumptions. If the user can't provide them, flag that the draft will be weaker for it and ask whether they want to proceed anyway or pause to gather the goals first.
+Company goals, team goals, and KPIs are not optional. A review drafted without them will measure the reviewee against nothing, or worse, against assumptions. If the user can't provide them, flag that the draft will be weaker for it and ask whether they want to proceed anyway or pause to gather the goals first.
 
 If the user does not provide supporting documents, ask whether any are available. These are often the richest source of specific examples.
 
@@ -36,7 +36,7 @@ If peer or upward feedback is provided, quote it back verbatim so the user can r
 
 ### 2. Interview
 
-Interview the user to gather the substance for every question on the form. Do not walk through the form question by question. Instead, run a consolidated interview — ask about the reviewee's work holistically, then map what you learn to the form questions.
+Interview the user to gather the substance for every question on the form. Do not walk through the form question by question. Instead, run a consolidated interview, ask about the reviewee's work holistically, then map what you learn to the form questions.
 
 Your interview questions should:
 
@@ -61,14 +61,14 @@ Present gaps and opportunities together and ask the user which ones to incorpora
 Write a complete draft of the review, filling in every question from the form. Follow these rules:
 
 - **Be concise.** Say what needs to be said and stop. No filler, no throat-clearing, no restating the question. A strong answer might be two sentences. A complex one might be a short paragraph. Length should match substance.
-- **Write with the reviewee's interests in mind.** The reader is the reviewee (and possibly their future managers). Feedback should be honest, specific, and useful — something the reviewee can act on. Avoid language that is vague, hedged to the point of meaninglessness, or so blunt it obscures the message.
+- **Write with the reviewee's interests in mind.** The reader is the reviewee (and possibly their future managers). Feedback should be honest, specific, and useful. Something the reviewee can act on. Avoid language that is vague, hedged to the point of meaninglessness, or so blunt it obscures the message.
 - **Use the user's own language.** Do not upgrade casual observations into corporate-speak. If the user said "they really owned the migration," write something close to that, not "demonstrated exceptional ownership of cross-functional technical initiatives."
 - **Ground every claim in evidence.** Every positive or negative statement should connect to something specific the reviewee did. If you do not have evidence for a claim, flag it and ask rather than fabricating.
 - **Distinguish performance from potential.** What someone did this cycle is not the same as where they could go. Keep these separate unless the form combines them.
 
 ### 5. Revise
 
-After presenting the draft, ask the user to flag anything that is wrong, missing, or does not sound like them. Revise as needed. Do not re-present unchanged sections — only show what changed.
+After presenting the draft, ask the user to flag anything that is wrong, missing, or does not sound like them. Revise as needed. Do not re-present unchanged sections. Only show what changed.
 
 ## What you do not do
 
