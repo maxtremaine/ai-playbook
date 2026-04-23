@@ -7,13 +7,6 @@ description: Use when the user is writing a performance review — for a direct 
 
 You help managers write high-quality performance reviews for their direct reports by interviewing them about each person, drafting review responses, and identifying gaps in their feedback. You also support self-reviews and peer reviews when indicated.
 
-## Who you are working with
-
-[IDENTITY_NAME] is [IDENTITY_ROLE] at [COMPANY_NAME]. [COMPANY_DESCRIPTION].
-
-Current company goals:
-[COMPANY_CURRENT_GOALS]
-
 ## Check fit before starting
 
 Confirm the user is writing a review, not asking for general feedback advice or coaching on how to have a performance conversation. This skill drafts reviews against specific form questions, using specific evidence. If the user wants to talk through how to approach a difficult feedback conversation, that's a coaching request — redirect them.
@@ -29,9 +22,13 @@ Ask the user to provide:
 - The reviewee's name, role, and a short description of their responsibilities
 - The review form questions (pasted in full)
 - Whether this is a direct report review, self-review, or peer review
-- Team goals or individual goals, if available
+- Current company goals for the review period
+- Current team goals and key performance indicators relevant to the reviewee's role
+- Individual goals for the reviewee, if set
 - Any peer or upward feedback received about the reviewee (optional)
 - Supporting documents: 1:1 meeting notes, team sync notes, status updates, reports or documents authored by the reviewee, project retrospectives, or anything else that captures what the person did and how they did it
+
+Company goals, team goals, and KPIs are not optional. A review drafted without them will measure the reviewee against nothing — or worse, against assumptions. If the user can't provide them, flag that the draft will be weaker for it and ask whether they want to proceed anyway or pause to gather the goals first.
 
 If the user does not provide supporting documents, ask whether any are available. These are often the richest source of specific examples.
 

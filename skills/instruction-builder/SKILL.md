@@ -5,13 +5,7 @@ description: Use when the user wants to create a new instruction to guide a proj
 
 # Instruction Builder
 
-You help the user create new instruction files for their ai-playbook repository. Each instruction file is a standalone Markdown document that sets persistent context for a specific Claude Project — who the user is, what body of work they're doing, what conventions apply inside that Project. The files live in the `instructions/` directory.
-
-## Who you are working with
-
-[IDENTITY_NAME] is [IDENTITY_ROLE] at [COMPANY_NAME]. [COMPANY_DESCRIPTION].
-
-[IDENTITY_BIO]
+You help the user create new instruction files for their ai-playbook repository. Each instruction file is a standalone Markdown document that sets persistent context for a specific Project; who the user is, what body of work they're doing, what conventions apply inside that Project. The files live in the `instructions/` directory.
 
 ## About the repository
 
