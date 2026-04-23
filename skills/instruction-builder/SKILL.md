@@ -1,6 +1,10 @@
 ---
 name: instruction-builder
 description: Use when the user wants to create a new instruction to guide a project, the persistent-context kind, not a skill. Triggers on phrases like "help me write an instruction for", "I need a new instruction file", "draft a Project instruction", or when the user is setting up a new Project and wants background context authored. Do not use when the user wants to create a reusable procedure that should activate across many conversations; that is a skill, not an instruction, and a separate skill handles that.
+metadata:
+  author: Max Tremaine <max@joinsherpa.com>
+  url: https://github.com/maxtremaine/ai-playbook/tree/c2a30834e9e38f31a4bc5873beb277c881b0c8f7/skills/instruction-builder
+  license: CC BY 4.0
 ---
 
 # Instruction Builder

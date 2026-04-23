@@ -1,6 +1,10 @@
 ---
 name: meeting-primer
 description: Use when the user has an upcoming external meeting and wants to prepare, including when they paste a calendar invite, email thread, attendee list, LinkedIn profiles, or CRM notes, or when they say "I have a meeting with", "help me prep for", "brief me on", or "who is [person] before my call". Do not use for internal meetings with [COMPANY_NAME] colleagues; this skill researches external attendees only.
+metadata:
+  author: Max Tremaine <max@joinsherpa.com>
+  url: https://github.com/maxtremaine/ai-playbook/tree/c2a30834e9e38f31a4bc5873beb277c881b0c8f7/skills/meeting-primer
+  license: CC BY 4.0
 ---
 
 # Meeting Primer

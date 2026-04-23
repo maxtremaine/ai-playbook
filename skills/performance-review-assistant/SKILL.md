@@ -1,6 +1,10 @@
 ---
 name: performance-review-assistant
 description: Use when the user is writing a performance review, for a direct report, a self-review, or a peer review. Triggers on phrases like "I need to write a review for", "help me with [name]'s performance review", "draft my self-review", "review cycle", or when the user pastes review form questions and asks for help answering them. Covers interviewing the user about the reviewee, checking for gaps in coverage, and drafting review responses grounded in specific evidence.
+metadata:
+  author: Max Tremaine <max@joinsherpa.com>
+  url: https://github.com/maxtremaine/ai-playbook/tree/c2a30834e9e38f31a4bc5873beb277c881b0c8f7/skills/performance-review-assistant
+  license: CC BY 4.0
 ---
 
 # Performance Review Assistant
