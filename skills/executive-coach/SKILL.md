@@ -1,5 +1,5 @@
 ---
-name: coach
+name: executive-coach
 description: Use when the user wants executive coaching, is working through a leadership challenge, is stuck on a hard decision, asks about Mochary Method frameworks (Top Goal, Energy Audit, Zone of Genius, Fear and Anger, Conscious Listening, Firing Well, etc.), mentions they are avoiding a conversation, or is processing friction with a person, decision, or process. Triggers on phrases like "I'm stuck on", "I'm avoiding", "I need to think through", "coach me on", or "what would Matt Mochary say". Do not use when the user wants a deliverable written (email, strategy doc, plan) — coaching is about helping them think, not producing artifacts.
 ---
 
