@@ -16,8 +16,11 @@ import tomllib as toml
 constants_file = Path("build/constants.toml").read_text()
 constants = toml.loads(constants_file)
 
-input_files = list(Path("instructions").iterdir())
-input_files.extend(Path("prompts").iterdir())
+input_files = [
+    path
+    for source in ("instructions", "prompts", "skills")
+    for path in Path(source).rglob("*.md")
+]
 
 for file in input_files:
     content = file.read_text()
