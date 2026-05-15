@@ -117,21 +117,22 @@ After a meaningful review session, the skill gets sharper if learnings are captu
 
 If the thread was just "explain this clause" or "draft a comment on Section X" with no friction or new ground, skip this step — there's nothing to capture.
 
-**How to do it:** Surface the proposed changes near the end of the thread, before the user signs off. Don't wait for them to ask. Frame it as:
+**How to do it:** Surface the proposed changes near the end of the thread, before the user signs off. Don't wait for them to ask. Prefix each proposed change with `[SKILL]` if it belongs in the generic `not-a-lawyer` skill (workflow, output format, generic clause positions, comment-drafting tone — anything that applies across companies) or `[INSTRUCTION]` if it belongs in the calling project's instructions (company-specific positions, industry-specific patterns, a particular user's preferences). The prefixes let the skill maintainer route changes quickly. Frame it as:
 
 > Before we wrap, a few things from this thread worth capturing. Apply, forward to whoever owns the skill, or skip.
 >
-> **Proposed SKILL.md change — [short label]**
-> *Section to edit:* [e.g., "Step 3, Mode A, What to look for"]
+> **[SKILL] Proposed SKILL.md or references change — [short label]**
+> *File and section to edit:* [e.g., "`SKILL.md`, Step 3, Mode A, What to look for" or "`references/common-clauses.md`, new section on MFN clauses"]
 > *Current:* "[exact current language, if a replacement]" or "[Not currently covered]"
 > *Proposed:* "[exact new or replacement language]"
 > *Why:* [One sentence tying it to what happened in this thread.]
 >
-> **Proposed project-side change — [short label]**
-> *What:* [e.g., "Add a fallback position on MFN clauses to the project's position memory"]
+> **[INSTRUCTION] Proposed project-side change — [short label]**
+> *Section to edit:* [e.g., "Standard positions" or "Recurring counterparty patterns"]
+> *Proposed:* "[exact new or replacement language]"
 > *Why:* [One sentence.]
 >
-> Want me to apply any of these? They can also be forwarded to whoever maintains the skill.
+> Want me to apply any of these? `[SKILL]` items can be forwarded to whoever maintains the skill; `[INSTRUCTION]` items can be applied directly to the project.
 
 **Scope of proposed changes:**
 
