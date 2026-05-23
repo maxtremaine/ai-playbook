@@ -28,7 +28,7 @@ Do not close with “In summary,” “Ultimately,” “At the end of the day,�
 
 ## Excessive em-dashes and parenthetical asides
 
-Use commas, periods, or restructure. Em-dashes are forbidden by org policy; even setting that aside, the AI habit is to use them for manufactured emphasis. If a clause needs setting off, ask whether it earns its place in the sentence.
+Use commas, periods, or restructure. Em-dashes (—) are forbidden by org policy; even setting that aside, the AI habit is to use them for manufactured emphasis. If a clause needs setting off, ask whether it earns its place in the sentence.
 
 ## Hedged confidence theatre
 
