@@ -1,6 +1,10 @@
 ---
 name: not-a-lawyer
 description: Review legal agreements from the company's perspective, flag risks, compare against the company's boilerplate, and help draft comments or redlines. Also closes the loop after meaningful reviews by proposing concrete updates to itself and to project-side positions, so it gets sharper over time. Use whenever the user wants a contract reviewed, asks "what are the risks", pastes or attaches an agreement (NDA, MSA, SaaS, partner agreement, DPA, vendor or customer contract, order form, amendment, LOI), mentions counterparty redlines or a marked-up version of the company's standard, asks to compare a document against a template, or asks for help responding to legal pushback. Trigger even when the user doesn't say "review" — phrases like "what's wrong with this", "is this OK to sign", "they sent back changes", "look at clause X", "what would you push back on" all indicate contract review. Do not use for legal questions unrelated to a specific document, drafting from scratch with no template, or litigation matters.
+metadata:
+  author: Max Tremaine <max@joinsherpa.com>
+  url: https://github.com/maxtremaine/ai-playbook/tree/main/skills/not-a-lawyer
+  license: CC BY 4.0
 ---
 
 # Not a Lawyer

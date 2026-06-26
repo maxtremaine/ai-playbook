@@ -3,7 +3,7 @@ name: outside-voice
 description: "Write or edit any prose an audience outside Sherpa will read, in Sherpa's voice and free of AI writing tells. Use whenever drafting, rewriting, or reviewing external-facing copy of any kind: blog posts, LinkedIn and social posts, press releases, website and landing copy, partner and customer emails, newsletters, conference abstracts, talk scripts, bylined articles, and award entries. Also use when the user says 'make this sound like Sherpa', 'write this for partners', 'write this for travelers', 'de-slop this', 'remove the AI tells', or pastes a draft and asks for a voice or quality pass. This skill governs the words and voice of prose; pair it with sherpa-brand-style for the visual look of decks, docs, and spreadsheets."
 metadata:
   author: Max Tremaine <max@joinsherpa.com>
-  url: ___
+  url: https://github.com/maxtremaine/ai-playbook/tree/main/skills/outside-voice
   license: Proprietary (Sherpa internal, shared for reference only). Adapted from Stop Slop (MIT) and Patrick Winston's communication principles.
 ---
 
