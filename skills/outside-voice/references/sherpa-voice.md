@@ -136,7 +136,7 @@ Not this ("where we were"):
 - Do not use a serial (Oxford) comma in a simple series. "We offer documentation to Australia, Vietnam and Brazil."
 
 ### The em dash
-The brand styleguide allows em dashes for human writers. This skill is for AI-drafted external copy, where the em dash is a leading AI tell and Sherpa's own AI prompt says not to use dashes. So: no em dashes here. Use a comma, colon, semicolon, or split into two sentences.
+The brand styleguide allows em dashes for human writers. This skill is for AI-drafted external copy, where the em dash is a leading AI tell and Sherpa's own AI prompt says not to use dashes. So: no em dashes here. Split separate ideas into separate sentences, or use a comma when the ideas belong in one thought. Do not swap the dash for a colon or semicolon reveal; that keeps the tell (see Split clauses in `ai-tells.md`).
 
 ### Abbreviations
 - Write out a country or union in full on first use, then abbreviate if useful. European Union, then EU.

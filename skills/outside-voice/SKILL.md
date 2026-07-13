@@ -21,7 +21,7 @@ This skill draws on three sources that each do a different job. Hold all three a
 
 2. **Clarity structure** is the spine. Lead with a promise, carry one idea, signpost so a skimming reader stays found, end on the takeaway. Drawn from Patrick Winston. Full set: `references/clarity-principles.md`.
 
-3. **AI-tell removal** is the filter. Cut throat-clearing, false contrasts, false agency, passive voice, em dashes, vague declaratives, jargon, adverb pileups. Adapted from Stop Slop. Full catalog: `references/ai-tells.md`.
+3. **AI-tell removal** is the filter. Cut throat-clearing, false contrasts, false agency, passive voice, em dashes, split clauses, cleft sentences, hyperbole, vague declaratives, jargon, adverb pileups. Adapted from Stop Slop. Full catalog: `references/ai-tells.md`.
 
 ### The reconciliation that makes this work
 
@@ -52,10 +52,11 @@ When a tell-rule fights the voice, strip only the empty version and keep the one
 
 ## Hard rules (never get these wrong)
 
-- **Active voice, real subject.** "Yana sent the forms," not "the forms were sent." Find the actor and put them in front.
+- **Active voice, subject first.** "Yana sent the forms," not "the forms were sent." Find the actor and open the sentence with them. No clefts: "The integration drives conversion," not "It's the integration that drives conversion" or "What matters is the integration."
 - **First person for Sherpa.** "We are proudly Canadian," not "Sherpa is a Canadian-owned company." Use "we" and "our."
-- **No em dashes.** Sherpa's own AI guidance says no dashes, and em dashes are a top AI tell. Use a comma, colon, semicolon, or two sentences. (The brand styleguide permits em dashes for human writers; this skill is for AI-drafted external copy, where they read as a tell.)
+- **No em dashes, no split-clause substitutes.** Sherpa's own AI guidance says no dashes, and em dashes are a top AI tell. Separate ideas get separate sentences. Do not swap the dash for a colon or semicolon setup-and-payoff ("The result: fewer denials"); that keeps the tell. A comma works when the ideas belong in one thought. (The brand styleguide permits em dashes for human writers; this skill is for AI-drafted external copy, where they read as a tell.)
 - **No inanimate actors.** Data does not tell us, markets do not reward, decisions do not emerge. Name the person, or use "you."
+- **Specifics over hype.** No "seamless," "revolutionary," "thrilled to announce." Make the specific claim or cite the number; we never overpromise or oversell.
 - **Lead with the useful thing.** Get to the point in the first sentence. Bury nothing.
 - **sherpa° styling.** The brand is "sherpa°" lowercase with the degree mark in brand contexts. Match whatever house format the piece already uses.
 - **Sentence case titles, active-verb headings.** Capitalize the first word only. Headings start with a verb. No title punctuation except a question mark. Full formatting rules in `references/sherpa-voice.md`.
@@ -63,9 +64,11 @@ When a tell-rule fights the voice, strip only the empty version and keep the one
 ## Self-check before delivering
 
 - Does the first sentence carry the point, or clear its throat? Cut any "Here's the thing," "It turns out," "In today's."
-- Any "not X, it's Y" contrast or "isn't about X, it's about Y"? State Y directly.
+- Any "not X, it's Y" contrast, "isn't about X, it's about Y," or "not only X but Y"? State the point once.
 - Any passive voice or inanimate actor? Name who acts.
-- Any em dash? Remove it.
+- Any cleft ("What matters is," "It's X that")? Put the subject first.
+- Any em dash? Remove it. Any colon or semicolon splitting a setup from a payoff? Write two sentences.
+- Any hype word or superlative ("seamless," "thrilled," "game-changing")? Replace with the specific claim or number.
 - Any vague declarative ("the implications are significant")? Name the specific thing.
 - Any adverb that adds nothing ("really," "just," "simply")? Cut it. Keep only adverbs doing real work.
 - Three sentences in a row the same length? Break the rhythm. But do not chop everything into fragments.

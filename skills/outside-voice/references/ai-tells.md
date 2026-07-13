@@ -62,6 +62,18 @@ Replace with plain language. Sherpa is educational, not corporate.
 | Circle back           | Return to, revisit     |
 | On the same page      | Aligned, agreed        |
 
+## Hyperbole
+
+Inflated claims and manufactured excitement. The voice guide says never overpromise or oversell; hype words do both, and AI drafts reach for them constantly. Replace the hype word with the specific claim, number, or outcome. If no specific fact sits behind the word, the claim goes.
+
+- Superlative product claims: seamless, effortless, revolutionary, transformative, unprecedented, world-class, best-in-class, cutting-edge, game-changing
+- Manufactured excitement: "We're thrilled to announce," "We couldn't be more excited," incredible, amazing
+- Inflated outcomes: skyrocket, supercharge, unlock, empower, 10x
+
+Test: swap the hype word for the fact and see if the sentence gets stronger. "Seamless integration" becomes "one API integration." "We're thrilled to announce" becomes "Today we launched." It almost always does.
+
+Lazy extremes (every, always, never, nobody) are the same failure in miniature. See Word patterns.
+
 ## Adverbs
 
 Cut adverbs that only add emphasis. The usual empty offenders: really, just, literally, genuinely, honestly, simply, actually, deeply, truly, fundamentally, inherently, inevitably, interestingly, importantly, crucially.
@@ -120,18 +132,21 @@ Sentences that announce importance without naming the specific thing. Cut them o
 
 False drama through telegraphed reversal. State the point directly.
 
-| Pattern                             | Problem                  |
-|:----------------------------------- |:------------------------ |
-| "Not because X. Because Y."         | Telegraphed reversal     |
-| "[X] isn't the problem. [Y] is."    | Formulaic reframe        |
-| "The answer isn't X. It's Y."       | Predictable pivot        |
-| "It feels like X. It's actually Y." | Setup and reveal cliche  |
-| "Not X. But Y." / "not X, it's Y"   | Mechanical contrast      |
-| "stops being X and starts being Y"  | False transformation arc |
-| "is about X but not Y"              | False distinction        |
-| "not just X but also Y"             | Additive hedge           |
+| Pattern                             | Problem                            |
+|:----------------------------------- |:---------------------------------- |
+| "Not because X. Because Y."         | Telegraphed reversal               |
+| "[X] isn't the problem. [Y] is."    | Formulaic reframe                  |
+| "The answer isn't X. It's Y."       | Predictable pivot                  |
+| "It feels like X. It's actually Y." | Setup and reveal cliche            |
+| "Not X. But Y." / "not X, it's Y"   | Mechanical contrast                |
+| "stops being X and starts being Y"  | False transformation arc           |
+| "is about X but not Y"              | False distinction                  |
+| "not just X but also Y"             | Additive hedge                     |
+| "Not only does X, but (also) Y"     | Two clauses doing one clause's job |
+| "X, and that's the point."          | Meta pivot                         |
+| "It works for X, but it's Y who..." | Manufactured tension               |
 
-Instead: state Y directly. Drop the negation.
+Instead: state Y directly. Drop the negation. When two clauses carry one point, merge them: "It reduces denials and opens a revenue line," not "Not only does it reduce denials, but it also opens a revenue line."
 
 ## Negative listing
 
@@ -147,6 +162,16 @@ Sentence fragments for emphasis read as manufactured profundity. Use complete se
 - "[Noun]. That's it. That's the [thing]."
 - "X. And Y. And Z."
 - "This unlocks something. [Word]."
+
+## Split clauses
+
+One idea chopped into a setup and a payoff with a colon or semicolon. This is the em-dash reveal wearing different punctuation, so swapping a dash for a colon keeps the tell.
+
+- "The result: 40 percent fewer denied boardings."
+- "eVisas are complex; selling them shouldn't be."
+- "One integration: every requirement, every market."
+
+Default: separate ideas get separate sentences. "Partners saw 40 percent fewer denied boardings." Keep the colon for a true list or a definition. Keep the semicolon for the rare pair of sentences that read worse apart.
 
 ## Rhetorical setups
 
@@ -203,6 +228,17 @@ This is also Sherpa's first tone rule. "Yana sent the forms," not "the forms wer
 
 "What makes this hard is..." becomes "The constraint is..." or, better, name the constraint.
 
+## Cleft sentences
+
+Sentences split to delay the subject for manufactured emphasis. The subject comes first, always, for clarity.
+
+| Pattern                                             | Fix                                            |
+|:--------------------------------------------------- |:---------------------------------------------- |
+| "What matters is the traveler's confidence"         | "Travelers need confidence at the gate"        |
+| "It's the integration that drives conversion"       | "The integration drives conversion"            |
+| "What we found was that partners wanted revenue"    | "Partners wanted revenue"                      |
+| "There are three reasons this fails"                | "This fails for three reasons," then name them |
+
 ## Rhythm
 
 | Pattern                               | Fix                                                                     |
@@ -210,7 +246,7 @@ This is also Sherpa's first tone rule. "Yana sent the forms," not "the forms wer
 | Three-item lists by default           | Two items often read better. Use three when you have three real things. |
 | Questions answered immediately        | Let a question breathe, or cut it                                       |
 | Every paragraph ends on a punchy line | Vary the endings                                                        |
-| Em dashes                             | Remove. Comma, colon, semicolon, or two sentences.                      |
+| Em dashes                             | Remove. Separate ideas get separate sentences.                          |
 | Stacked short punchy sentences        | Vary length. See the calibration note.                                  |
 | "Not always. Not perfectly."          | Hedging disguised as reassurance                                        |
 
@@ -226,8 +262,11 @@ This is also Sherpa's first tone rule. "Yana sent the forms," not "the forms wer
 - Adverb that adds nothing? Cut it.
 - Passive voice or inanimate actor? Name who acts.
 - Wh- sentence opener? Restructure.
+- Subject delayed by "What matters is" or "It's X that"? Lead with the subject.
+- Colon or semicolon splitting a setup from a payoff? Write two sentences.
+- Hype word or superlative ("seamless," "thrilled," "game-changing")? Replace with the specific claim.
 - "Here's what / this / that" throat-clearing? Cut to the point.
-- "Not X, it's Y" contrast? State Y.
+- "Not X, it's Y" contrast, or "not only X but Y"? State the point once.
 - Three sentences the same length? Break one. But do not chop everything to fragments.
 - Paragraph ends on a one-liner every time? Vary it.
 - Em dash anywhere? Remove it.
