@@ -12,7 +12,8 @@ Two failure modes, not one:
 
 So:
 - Cut adverbs that add nothing. Keep adverbs that carry real meaning and fit an empathetic tone. "We know visas can be confusing" keeps "can." "We're really thrilled" loses "really."
-- Vary sentence length the way speech does. Do not flatten every line to a fragment.
+- Vary sentence length the way speech does. Do not flatten every line to a fragment. A short sentence is fine. A one-sentence paragraph is fine when it earns the emphasis. The failure is stacking them for effect.
+- Do not reach for parallelism, rhythm, or rhetorical symmetry unless it serves the meaning. Plain prose is the default. The goal is writing that reads like a careful person said the thing, not writing that performs care.
 - Compress for clarity, not for drama. "Move faster. Your competition is." wins a contest and loses the brand. Sherpa would write a warmer, clearer version.
 - When a rule here fights Sherpa's voice, strip the empty version and keep the human one.
 
@@ -91,17 +92,20 @@ Lazy extremes (every, always, never, nobody) are the same failure in miniature. 
 
 ## Adverbs
 
-Cut adverbs that only add emphasis. The usual empty offenders: really, just, literally, genuinely, honestly, simply, actually, deeply, truly, fundamentally, inherently, inevitably, interestingly, importantly, crucially.
+Cut adverbs that only add emphasis. The usual empty offenders: really, just, literally, genuinely, honestly, simply, actually, deeply, truly, essentially, fundamentally, inherently, inevitably, incredibly, remarkably, interestingly, importantly, crucially, ultimately.
 
-Keep an adverb only when it changes the meaning of the sentence. Test: delete it and read the sentence. If nothing is lost, it stays deleted.
+Keep an adverb only when it changes the meaning of the sentence. Test: delete it and read the sentence. If nothing is lost, it stays deleted. This test is not only for adverbs. Run it on every word in a sentence you are unsure about, then ask whether there is an easier way to say the whole thing.
 
 Also cut these filler phrases:
 - "At its core"
 - "In today's [X]"
 - "It's worth noting"
+- "It's important to remember"
 - "At the end of the day"
 - "When it comes to"
 - "In a world where"
+- "In an era of"
+- "Now more than ever"
 - "The reality is"
 
 ## Meta-commentary
@@ -154,6 +158,7 @@ False drama through telegraphed reversal. State the point directly.
 | "The answer isn't X. It's Y."       | Predictable pivot                  |
 | "It feels like X. It's actually Y." | Setup and reveal cliche            |
 | "Not X. But Y." / "not X, it's Y"   | Mechanical contrast                |
+| "Less X, more Y"                    | Negation-affirmation pivot         |
 | "stops being X and starts being Y"  | False transformation arc           |
 | "is about X but not Y"              | False distinction                  |
 | "not just X but also Y"             | Additive hedge                     |
@@ -215,7 +220,7 @@ Balance performed rather than held. The tell is a sentence that concedes and cou
 
 State the view. Sherpa is the expert the reader defers to, so refusing to answer reads as evasion, not rigor.
 
-Acknowledge uncertainty when it is real, and be specific about it. Travel requirements genuinely do vary by nationality and change without notice, and saying so is accurate rather than hedged. The difference is whether the qualifier tells the reader something they can act on. "Requirements depend on your nationality and where you transit" is useful. "It depends on your situation" is not.
+Acknowledge uncertainty when it is real, and be specific about it. Travel requirements do vary by nationality and change without notice, and saying so is accurate rather than hedged. The difference is whether the qualifier tells the reader something they can act on. "Requirements depend on your nationality and where you transit" is useful. "It depends on your situation" is not.
 
 ## False agency
 
@@ -276,14 +281,14 @@ Sentences split to delay the subject for manufactured emphasis. The subject come
 
 ## Rhythm
 
-| Pattern                               | Fix                                                                     |
-|:------------------------------------- |:----------------------------------------------------------------------- |
+| Pattern                                                                                | Fix                                                                                                                    |
+|:-------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------ |
 | Three-item lists by default ("faster, smarter, cheaper"; "clear, concise, compelling") | Triples chosen for cadence rather than content. Two items often read better. Use three when you have three real things. |
-| Questions answered immediately        | Let a question breathe, or cut it                                       |
-| Every paragraph ends on a punchy line | Vary the endings                                                        |
-| Em dashes                             | Remove. Separate ideas get separate sentences.                          |
-| Stacked short punchy sentences        | Vary length. See the calibration note.                                  |
-| "Not always. Not perfectly."          | Hedging disguised as reassurance                                        |
+| Questions answered immediately                                                         | Let a question breathe, or cut it                                                                                      |
+| Every paragraph ends on a punchy line                                                  | Vary the endings                                                                                                       |
+| Em dashes                                                                              | Remove. Separate ideas get separate sentences.                                                                         |
+| Stacked short punchy sentences                                                         | Vary length. See the calibration note.                                                                                 |
+| "Not always. Not perfectly."                                                           | Hedging disguised as reassurance                                                                                       |
 
 ## Word patterns
 

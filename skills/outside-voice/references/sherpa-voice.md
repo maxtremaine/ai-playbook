@@ -78,6 +78,8 @@ Optimism has a limit, and requirements are where it hits. Being upbeat about wha
 - "You might need a visa." / "You may be eligible for a visa." The second sounds kinder and tells the traveler less.
 - "Before you travel, you must submit this form." / "Travelers are required to submit this form."
 
+Note what this does and does not license. "You must" is fine; it is direct, and the reader needs to know. What is not fine is leading with the consequence of failure, which is why the Cancun example above prefers the arrival-and-action version. The objection there is the threat, not the plainness. Say what to do, say it plainly, and skip the warning about what happens if they do not.
+
 Qualify a requirement when the qualifier is what makes it accurate: "depending on your nationality," "based on your passport," "if you transit through a third country." These are not hedges. They are the reason the answer is correct. See Hedged confidence theatre in `ai-tells.md` for the line between a qualifier that informs and one that evades.
 
 ## Tone hierarchy for product and external copy
