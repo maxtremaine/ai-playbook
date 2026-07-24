@@ -1,6 +1,6 @@
 # Max's AI Playbook
 
-A curated collection of skills, instructions, and prompts I use to work effectively with AI.
+A curated collection of skills, instructions, prompts, and scheduled tasks I use to work effectively with AI.
 
 The goal of this repository is to share what actually works and get better through your feedback. This is the material I use day to day, published so you can learn from it, and so I can learn from you.
 
@@ -11,19 +11,24 @@ Take what is useful. Copy it, modify it, make it yours. If something doesn't wor
 - **`skills/`** — Procedures to follow when a specific workflow arises.
 - **`instructions/`** — Project briefs, workflows, and guidelines that define how work should be approached and structured.
 - **`prompts/`** — Reusable prompt templates for common tasks.
+- **`scheduled/`** — Tasks that run on a cadence without me in the room.
 - **`build/`** — A simple build system for personalizing the templates and keeping sensitive information private.
 
-Each file in `instructions/` and `prompts/` is designed to be copied and used directly. Each folder in `skills/` is designed to be zipped and uploaded. Placeholders are marked in all caps, and can be replaced with your information in `build/constants.toml`.
+Each file in `instructions/` and `prompts/` is designed to be copied and used directly. Each folder in `skills/` is designed to be zipped and uploaded. Each file in `scheduled/` is a prompt body plus its cadence, which you hand to whatever runs your scheduled tasks. Placeholders are marked in all caps, and can be replaced with your information in `build/constants.toml`.
 
-## Skill, Instruction, or Prompt?
+## Skill, Instruction, Prompt, or Scheduled Task?
 
-Three different jobs. Pick by what the material does, not by how long it is.
+Four different jobs. Pick by what the material does, not by how long it is.
 
 - **Skill** → a procedure that should apply everywhere Claude works. Your review methodology, your writing style, your meeting-prep workflow.
 - **Instruction** → persistent context for one ongoing body of work. A specific fundraise, a specific client, a research initiative. Scopes to one Project.
 - **Prompt** → a single task-specific ask. Short, reusable, fired off in any chat.
+- **Scheduled task** → work that fires on a cadence with nobody watching. A morning brief, a twice-daily inbox triage, a weekly digest.
 
-The decider: **if you find yourself copy-pasting a lot of content into a Prompt, it should be a Project. If you find yourself copy-pasting the same instruction into multiple Projects, it should be a Skill.**
+The deciders:
+
+- **If you find yourself copy-pasting a lot of content into a Prompt, it should be a Project. If you find yourself copy-pasting the same instruction into multiple Projects, it should be a Skill.**
+- **If it runs without you in the room, it is a scheduled task, not a prompt.** The absence of a human changes how it has to be written, not just where it lives.
 
 A few principles behind the way these are written:
 
@@ -31,6 +36,7 @@ A few principles behind the way these are written:
 - Instructions set the stage for one body of work.
 - Prompts are the specific asks within that context, which keeps prompts short and reusable.
 - Skills are the muscle memory — the things you want Claude to do your way regardless of which Project you're in.
+- Scheduled tasks are the standing orders — they run whether or not you remember them, so they carry their own guardrails.
 
 ### How I Think About Skills
 
@@ -68,19 +74,41 @@ Instructions are foundation for a specific workstream. A good instruction means 
 
 **Iterate in layers.** I rarely try to get a final output in one shot. The prompts here often assume a multi-step workflow: research first, then structure, then draft, then refine. Each step is a separate prompt.
 
+### How I Think About Scheduled Tasks
+
+A scheduled task is not a prompt with a timer bolted on. Nobody is there to answer a clarifying question, notice a bad assumption, or stop a destructive action halfway through. That changes the writing.
+
+**Write for an empty room.** A prompt can ask me a question and wait. A scheduled task cannot. Every decision it needs has to be pre-resolved in the text: what counts as important, what to do in the ambiguous case, what the default is. If the task would need to ask, it will guess instead.
+
+**State the guardrails as a principle, then illustrate it.** "Read-only" on its own is not enough when a connector exposes forty write operations. But a bare allowlist of verbs is not enough either. My weekday brief used to say *use only read, search, list, and get*, which quietly excluded the `fetch` and `query` operations the task itself depends on, and said nothing about RSVPing to an invite or marking a message read. So: state the principle first, that it must never perform an operation which changes state, whatever that operation is called. Then give both lists as examples rather than as the definition, say plainly that neither is exhaustive, and tell it what to do when it can't classify an operation, which is not to call it.
+
+**Say what to do when something breaks.** Connectors go down. A task that runs unattended needs an explicit failure path: continue and note the gap, or stop and report. Without it, the default is retry, and retries are how an unattended task does real damage.
+
+**Treat everything it reads as data, not instruction.** An unattended task reads email, Slack messages, CRM notes, and calendar invites written by other people. Any of that content can contain something that reads like a command. Say plainly that only the task's own instructions direct it.
+
+**End with a report.** Since I was not watching, the output is my only window into what happened. I ask for what was reviewed, what was acted on, and what looked wrong. Silence is not success.
+
+**Record the cadence in the file.** The `schedule` field in the frontmatter here is documentation, not configuration. Claude stores a scheduled task as `{task-id}/SKILL.md` under `~/Claude/Scheduled/`, but the cron lives in application state, not in that file — so the file alone can't tell you when it runs, and a folder copied into place wouldn't carry a cadence. To put one of these into service, hand the body to Claude as the task prompt and the `schedule` value as the cron; Claude writes its own copy. A task published without its cadence is missing half its meaning, which is why I write it down here.
+
+**Personal specifics stay out of the repo.** The tasks in `scheduled/` are the sharable skeleton. The versions actually running on my machine name real colleagues, real accounts, and real internal pages. Those two will drift, and that is fine — the structure is the part worth publishing.
+
+**Write for the role, not the job title.** The weekday brief started as my own, which meant it assumed direct reports, pipeline oversight, and a specific stack. Almost none of that was load-bearing. Naming a source by what it is for (calendar, chat, issue tracker) instead of which product it is, and saying "whoever I meet one-on-one this week" instead of "my reports", made it work for anyone on the team without weakening it. Where a section really is role-specific, it is marked optional and meant to be deleted rather than left to report nothing every morning.
+
 ## The Build System
 
-The files in `instructions/`, `prompts/`, and `skills/` use placeholders like `[PERSONAL_BIO]` and `[COMPANY_DESCRIPTION]` so they can be shared publicly without leaking personal or sensitive information. The `build/` directory lets you replace these placeholders with your actual values automatically.
+The files in `instructions/`, `prompts/`, `skills/`, and `scheduled/` use placeholders like `[IDENTITY_BIO]` and `[COMPANY_DESCRIPTION]` so they can be shared publicly without leaking personal or sensitive information. The `build/` directory lets you replace these placeholders with your actual values automatically.
 
-**`build/constants.toml`** contains your constant strings, both public values (your name, company, role) and secrets (API keys, internal URLs, anything you don't want committed to version control). A sample is included in this repo, and included in `.gitignore` so it is never committed.
+**`build/constants.toml`** contains your constant strings. **This file is tracked in this repo, so treat everything in it as published.** The values here are the ones I am happy to share: my name, role, public bio, company description, work email, timezone. Anything you would not publish (API keys, internal URLs, private page IDs) does not belong in it as committed. The two Notion URLs are deliberately dummy values for that reason. If you want to keep real secrets in constants, untrack the file first (`git rm --cached build/constants.toml`) so the `.gitignore` entry takes effect, and commit a dummy copy under a different name for reference.
 
-**`build/__main__.py`** reads the TOML file, walks through all `.md` files in `instructions/`, `prompts/`, and `skills/`, replaces every `[PLACEHOLDER]` with the corresponding value from your constants, and writes the resolved files to an `output/` directory. Skills preserve their folder structure in the output so they can be zipped and uploaded directly.
+**`build/__main__.py`** reads the TOML file, walks through all `.md` files in `instructions/`, `prompts/`, `skills/`, and `scheduled/`, replaces every `[PLACEHOLDER]` with the corresponding value from your constants, and writes the resolved files to an `output/` directory. Skills preserve their folder structure in the output so they can be zipped and uploaded directly.
 
-To run it:
+Requires Python 3.11 or later (it uses `tomllib` from the standard library). To run it:
 
 ```bash
 python3 build
 ```
+
+Scheduled tasks need two more steps. Some open with a setup block: bracketed notes marking where your own tools, recurring meetings, and colleagues go, plus sections to delete if they don't apply to your role. The build leaves all of that untouched, so work through it first. Then create the task in your assistant using the resolved body as the prompt and the frontmatter `schedule` as the cron, since the cadence is not something the file can carry on its own.
 
 This keeps the source templates portable and the resolved output private. The `output/` directory should also be in your `.gitignore`, as it is here.
 
@@ -114,7 +142,11 @@ This material is provided as-is, without warranty of any kind. The author assume
 │   └── *.md
 ├── prompts/
 │   └── *.md
+├── scheduled/
+│   └── <task-id>.md
 └── output/             # generated files (added during build)
 ```
 
-**Important:** Your real `build/constants.toml` and the entire `output/` directory must be in `.gitignore`. The repo includes `constants.toml` showing the expected format with dummy values.
+Filenames in `scheduled/` are the task IDs. Some skills also carry a `references/` or `assets/` subfolder alongside their `SKILL.md`.
+
+**Important:** The entire `output/` directory must stay in `.gitignore`, as it is here. `build/constants.toml` is tracked, so it holds only values I am willing to publish. If you fork this and need real secrets in there, untrack it first.

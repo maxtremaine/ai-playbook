@@ -1,6 +1,18 @@
 "[IDENTITY_NAME]" = "Max Tremaine"
 
+"[IDENTITY_FIRST_NAME]" = "Max"
+
 "[IDENTITY_ROLE]" = "Co-Founder and CEO"
+
+"[IDENTITY_EMAIL]" = "max@joinsherpa.com"
+
+"[IDENTITY_TIMEZONE]" = "America/Toronto"
+
+# Private values. Replace these locally; do not commit real URLs.
+# This file is tracked in git, so anything you put here is published.
+"[RITUALS_PAGE_URL]" = "https://app.notion.com/p/REPLACE_WITH_YOUR_RITUALS_PAGE"
+
+"[ONE_ON_ONES_PAGE_URL]" = "https://app.notion.com/p/REPLACE_WITH_YOUR_1-1S_PAGE"
 
 "[IDENTITY_BIO]" = """
 Max Tremaine is the Co-Founder and CEO of Sherpa, the travel documentation platform that helps airlines turn visa compliance from an operational burden into a meaningful revenue opportunity. Under his leadership, Sherpa has grown into the most widely integrated entry documentation provider across the global airline industry, with partnerships spanning all three major alliances and carriers including American Airlines, Air France-KLM, and ANA.
