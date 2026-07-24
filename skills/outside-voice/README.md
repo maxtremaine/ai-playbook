@@ -20,7 +20,7 @@ The order matters. Tell-removal taken to its limit produces clipped, cold, chopp
 
 ## Cut these patterns
 
-The catalog covers throat-clearing openers, binary contrasts, split clauses, cleft sentences, hyperbole, passive voice, false agency, business jargon, empty adverbs, em dashes, vague declaratives, and dramatic fragmentation. Each entry in `references/ai-tells.md` pairs the pattern with a fix and an example.
+The catalog covers throat-clearing openers, tidy summary endings, binary contrasts, split clauses, parenthetical asides, cleft sentences, hyperbole, passive voice, false agency, business jargon, empty adverbs and transitions, em dashes, hedged confidence theatre, vague declaratives, and dramatic fragmentation. Each entry in `references/ai-tells.md` pairs the pattern with a fix and an example.
 
 ## See the difference
 
