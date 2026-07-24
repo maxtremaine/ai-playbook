@@ -34,6 +34,14 @@ Announcement phrases that delay the point. State the content directly.
 
 Any "here's what / this / that" construction is throat-clearing. Cut it and state the point.
 
+## Tidy summary endings
+
+The mirror image of throat-clearing. A closing paragraph that restates what the piece just said, usually flagged by "In summary," "Ultimately," "At the end of the day," "In conclusion," "The bottom line is," or "So there you have it."
+
+Stop when the content is delivered. A reader who followed the piece does not need it recapped, and a reader who did not will not be rescued by a recap. If the last paragraph would survive being deleted, delete it.
+
+This is not a ban on ending well. Clarity structure calls for landing on the takeaway, and a real ending gives the reader the one thing to carry out or the specific next step. The difference is whether the final paragraph adds something. "Email us and we will scope the integration" earns its place. "Ultimately, travel documentation is complex, but with the right partner it doesn't have to be" does not.
+
 ## Emphasis crutches
 
 These add no meaning. Delete them.
@@ -61,6 +69,13 @@ Replace with plain language. Sherpa is educational, not corporate.
 | Moving forward        | Next, from now         |
 | Circle back           | Return to, revisit     |
 | On the same page      | Aligned, agreed        |
+| Leverage (as a verb)  | Use, apply             |
+| Robust                | Reliable, or the spec  |
+
+Two words need a Sherpa-specific ruling, because we use both literally and AI reaches for both as filler:
+
+- **Ecosystem.** Fine for a literal system of connected parts. Not fine as a vague stand-in for "the industry."
+- **Journey.** Fine when someone is actually traveling, which for us is most of the time. Not fine for "the customer journey," "our product journey," "our journey as a company."
 
 ## Hyperbole
 
@@ -148,6 +163,10 @@ False drama through telegraphed reversal. State the point directly.
 
 Instead: state Y directly. Drop the negation. When two clauses carry one point, merge them: "It reduces denials and opens a revenue line," not "Not only does it reduce denials, but it also opens a revenue line."
 
+The same pattern hides across a sentence boundary, where it is easy to miss because neither sentence looks wrong alone. Watch for any pair of consecutive sentences where the first negates something and the second asserts the alternative: "This is not a future vision. It is a system that works today." Cut the first sentence and keep the second.
+
+The test for whether a contrast earns its place: does the negated half carry information the reader would otherwise have assumed? If a reader really would have guessed X, saying "not X" corrects them and belongs. If not, it is decoration. Delete it.
+
 ## Negative listing
 
 Listing what something is not before revealing what it is. State the thing.
@@ -173,6 +192,8 @@ One idea chopped into a setup and a payoff with a colon or semicolon. This is th
 
 Default: separate ideas get separate sentences. "Partners saw 40 percent fewer denied boardings." Keep the colon for a true list or a definition. Keep the semicolon for the rare pair of sentences that read worse apart.
 
+Parenthetical asides are the third form of the same habit, a clause smuggled in to add emphasis without committing to it: "The rollout took six weeks (which nobody expected)." Ask whether the clause earns a place in the sentence. If it does, fold it in. If it does not, cut it. Parentheses are fine for a genuine aside the reader can skip, such as a unit, a source, or a short clarification.
+
 ## Rhetorical setups
 
 These announce insight instead of delivering it. Make the point and let the reader draw the conclusion.
@@ -181,6 +202,20 @@ These announce insight instead of delivering it. Make the point and let the read
 - "Here's what I mean:"
 - "Think about it:"
 - "And that's okay."
+
+## Empty transitions
+
+Connective phrases dropped in to imply a logical relationship that is not there: "That said," "With that in mind," "Moving on," "Furthermore," "Additionally," "Moreover," "In other words," "To be fair."
+
+Keep one only when the relationship it signals is real and the reader would not infer it. "That said" has to reverse something. "Furthermore" has to add to a running argument, and usually the next sentence adds on its own. Most of the time the paragraph reads better starting with its content.
+
+## Hedged confidence theatre
+
+Balance performed rather than held. The tell is a sentence that concedes and counter-concedes without landing anywhere: "While it's true that X, it's also important to consider Y." "There are arguments on both sides." "It depends on your specific situation."
+
+State the view. Sherpa is the expert the reader defers to, so refusing to answer reads as evasion, not rigor.
+
+Acknowledge uncertainty when it is real, and be specific about it. Travel requirements genuinely do vary by nationality and change without notice, and saying so is accurate rather than hedged. The difference is whether the qualifier tells the reader something they can act on. "Requirements depend on your nationality and where you transit" is useful. "It depends on your situation" is not.
 
 ## False agency
 
@@ -243,7 +278,7 @@ Sentences split to delay the subject for manufactured emphasis. The subject come
 
 | Pattern                               | Fix                                                                     |
 |:------------------------------------- |:----------------------------------------------------------------------- |
-| Three-item lists by default           | Two items often read better. Use three when you have three real things. |
+| Three-item lists by default ("faster, smarter, cheaper"; "clear, concise, compelling") | Triples chosen for cadence rather than content. Two items often read better. Use three when you have three real things. |
 | Questions answered immediately        | Let a question breathe, or cut it                                       |
 | Every paragraph ends on a punchy line | Vary the endings                                                        |
 | Em dashes                             | Remove. Separate ideas get separate sentences.                          |
@@ -266,7 +301,11 @@ Sentences split to delay the subject for manufactured emphasis. The subject come
 - Colon or semicolon splitting a setup from a payoff? Write two sentences.
 - Hype word or superlative ("seamless," "thrilled," "game-changing")? Replace with the specific claim.
 - "Here's what / this / that" throat-clearing? Cut to the point.
-- "Not X, it's Y" contrast, or "not only X but Y"? State the point once.
+- "Not X, it's Y" contrast, or "not only X but Y"? State the point once. Check across sentence boundaries too.
+- Last paragraph restates the piece? Delete it, or replace it with the reader's next step.
+- "That said," "Furthermore," "Additionally" doing no logical work? Cut it.
+- Balancing act instead of a view ("while it's true that X")? State the view.
+- Parenthetical aside carrying real weight? Fold it into the sentence or cut it.
 - Three sentences the same length? Break one. But do not chop everything to fragments.
 - Paragraph ends on a one-liner every time? Vary it.
 - Em dash anywhere? Remove it.

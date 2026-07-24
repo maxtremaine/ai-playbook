@@ -53,21 +53,25 @@ When a tell-rule fights the voice, strip only the empty version and keep the one
 ## Hard rules (never get these wrong)
 
 - **Active voice, subject first.** "Yana sent the forms," not "the forms were sent." Find the actor and open the sentence with them. No clefts: "The integration drives conversion," not "It's the integration that drives conversion" or "What matters is the integration."
-- **First person for Sherpa.** "We are proudly Canadian," not "Sherpa is a Canadian-owned company." Use "we" and "our."
+- **First person for Sherpa.** "We are proudly Canadian," not "Sherpa is a Canadian-owned company." Use "we" and "our." One exception: a general government requirement takes third person, because we are not the one requiring it. "Vietnam requires a printed copy," not "we require."
 - **No em dashes, no split-clause substitutes.** Sherpa's own AI guidance says no dashes, and em dashes are a top AI tell. Separate ideas get separate sentences. Do not swap the dash for a colon or semicolon setup-and-payoff ("The result: fewer denials"); that keeps the tell. A comma works when the ideas belong in one thought. (The brand styleguide permits em dashes for human writers; this skill is for AI-drafted external copy, where they read as a tell.)
 - **No inanimate actors.** Data does not tell us, markets do not reward, decisions do not emerge. Name the person, or use "you."
 - **Specifics over hype.** No "seamless," "revolutionary," "thrilled to announce." Make the specific claim or cite the number; we never overpromise or oversell.
 - **Lead with the useful thing.** Get to the point in the first sentence. Bury nothing.
+- **Requirements stay plain.** Warmth surrounds an instruction; it does not soften it. "You might need a visa," not "you may be eligible for a visa." A traveler who misreads a requirement gets turned away at the gate.
 - **sherpa° styling.** The brand is "sherpa°" lowercase with the degree mark in brand contexts. Match whatever house format the piece already uses.
 - **Sentence case titles, active-verb headings.** Capitalize the first word only. Headings start with a verb. No title punctuation except a question mark. Full formatting rules in `references/sherpa-voice.md`.
 
 ## Self-check before delivering
 
 - Does the first sentence carry the point, or clear its throat? Cut any "Here's the thing," "It turns out," "In today's."
-- Any "not X, it's Y" contrast, "isn't about X, it's about Y," or "not only X but Y"? State the point once.
+- Any "not X, it's Y" contrast, "isn't about X, it's about Y," or "not only X but Y"? State the point once. Check across sentence boundaries too: a sentence that negates followed by one that asserts is the same tell wearing a period.
+- Does the last paragraph restate the piece, or add something? Cut any "In summary," "Ultimately," "At the end of the day." End on the reader's takeaway or next step, or just stop.
+- Any transition doing no logical work ("That said," "Furthermore," "Additionally")? Cut it.
+- Any balancing act standing in for a view ("while it's true that X, it's also important to consider Y")? State the view. Keep only qualifiers that make the answer accurate, like "depending on your nationality."
 - Any passive voice or inanimate actor? Name who acts.
 - Any cleft ("What matters is," "It's X that")? Put the subject first.
-- Any em dash? Remove it. Any colon or semicolon splitting a setup from a payoff? Write two sentences.
+- Any em dash? Remove it. Any colon or semicolon splitting a setup from a payoff? Write two sentences. Any parenthetical carrying real weight? Fold it in or cut it.
 - Any hype word or superlative ("seamless," "thrilled," "game-changing")? Replace with the specific claim or number.
 - Any vague declarative ("the implications are significant")? Name the specific thing.
 - Any adverb that adds nothing ("really," "just," "simply")? Cut it. Keep only adverbs doing real work.

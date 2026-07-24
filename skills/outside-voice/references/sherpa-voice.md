@@ -73,6 +73,13 @@ More like this / less like this:
 - "We help restore consumer confidence to plan, book and travel." / "With our data, your ticket sales will skyrocket and customers will start traveling again."
 - "I understand your situation. How can I best help?" / "Relax and lower your voice."
 
+Optimism has a limit, and requirements are where it hits. Being upbeat about what a traveler needs to do makes the instruction vaguer, and a traveler who misreads it gets turned away at the gate. So state requirements plainly and let the tone stay warm around them.
+
+- "You might need a visa." / "You may be eligible for a visa." The second sounds kinder and tells the traveler less.
+- "Before you travel, you must submit this form." / "Travelers are required to submit this form."
+
+Qualify a requirement when the qualifier is what makes it accurate: "depending on your nationality," "based on your passport," "if you transit through a third country." These are not hedges. They are the reason the answer is correct. See Hedged confidence theatre in `ai-tells.md` for the line between a qualifier that informs and one that evades.
+
 ## Tone hierarchy for product and external copy
 
 When the three pull in different directions, rank them:
@@ -87,6 +94,8 @@ Voice constant, tone adjusted:
 - **Partners (product, commercial):** position Sherpa as the expert they can defer to. Lead with the value and the partnership benefit.
 - **Partners (technical, developers):** more technical terms are fine. Still plain where plain works.
 - **Press and public:** measured, clear, confident, no hype.
+- **Product and UI copy:** functional clarity outranks personality. A traveler mid-application wants the next step, not our voice. "Clear and simple" wins every tie. Use "we" for Sherpa acting, but third person for a general requirement: "Vietnam requires a printed copy," not "we require."
+- **Support:** lead with empathy, then answer straight. Where it helps, show the person how to get the answer themselves next time. Teaching self-sufficiency is part of being a guide.
 
 ## The voice in one paragraph
 
