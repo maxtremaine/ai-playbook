@@ -10,10 +10,10 @@ Take what is useful. Copy it, modify it, make it yours. If something doesn't wor
 
 - **`skills/`** — Procedures to follow when a specific workflow arises.
 - **`instructions/`** — Project briefs, workflows, and guidelines that define how work should be approached and structured.
-- **`scheduled/`** — Tasks that run on a cadence without me in the room.
+- **`scheduled-tasks/`** — Tasks that run on a cadence without me in the room.
 - **`build/`** — A simple build system for personalizing the templates and keeping sensitive information private.
 
-Each file in `instructions/` is designed to be copied and used directly. Each folder in `skills/` is designed to be zipped and uploaded. Each file in `scheduled/` is a prompt body plus its cadence, which you hand to whatever runs your scheduled tasks. Placeholders are marked in all caps, and can be replaced with your information in `build/constants.toml`.
+Each file in `instructions/` is designed to be copied and used directly. Each folder in `skills/` is designed to be zipped and uploaded. Each file in `scheduled-tasks/` is a prompt body plus its cadence, which you hand to whatever runs your scheduled tasks. Placeholders are marked in all caps, and can be replaced with your information in `build/constants.toml`.
 
 ## Skill, Instruction, or Scheduled Task?
 
@@ -89,17 +89,17 @@ A scheduled task is not a prompt with a timer bolted on. Nobody is there to answ
 
 **Record the cadence in the file.** The `schedule` field in the frontmatter here is documentation, not configuration. Claude stores a scheduled task as `{task-id}/SKILL.md` under `~/Claude/Scheduled/`, but the cron lives in application state, not in that file — so the file alone can't tell you when it runs, and a folder copied into place wouldn't carry a cadence. To put one of these into service, hand the body to Claude as the task prompt and the `schedule` value as the cron; Claude writes its own copy. A task published without its cadence is missing half its meaning, which is why I write it down here.
 
-**Personal specifics stay out of the repo.** The tasks in `scheduled/` are the sharable skeleton. The versions actually running on my machine name real colleagues, real accounts, and real internal pages. Those two will drift, and that is fine — the structure is the part worth publishing.
+**Personal specifics stay out of the repo.** The tasks in `scheduled-tasks/` are the sharable skeleton. The versions actually running on my machine name real colleagues, real accounts, and real internal pages. Those two will drift, and that is fine — the structure is the part worth publishing.
 
 **Write for the role, not the job title.** The weekday brief started as my own, which meant it assumed direct reports, pipeline oversight, and a specific stack. Almost none of that was load-bearing. Naming a source by what it is for (calendar, chat, issue tracker) instead of which product it is, and saying "whoever I meet one-on-one this week" instead of "my reports", made it work for anyone on the team without weakening it. Where a section really is role-specific, it is marked optional and meant to be deleted rather than left to report nothing every morning.
 
 ## The Build System
 
-The files in `instructions/`, `skills/`, and `scheduled/` use placeholders like `[IDENTITY_BIO]` and `[COMPANY_DESCRIPTION]` so they can be shared publicly without leaking personal or sensitive information. The `build/` directory lets you replace these placeholders with your actual values automatically.
+The files in `instructions/`, `skills/`, and `scheduled-tasks/` use placeholders like `[IDENTITY_BIO]` and `[COMPANY_DESCRIPTION]` so they can be shared publicly without leaking personal or sensitive information. The `build/` directory lets you replace these placeholders with your actual values automatically.
 
 **`build/constants.toml`** contains your constant strings. **This file is tracked in this repo, so treat everything in it as published.** The values here are the ones I am happy to share: my name, role, public bio, company description, work email, timezone. Anything you would not publish (API keys, internal URLs, private page IDs) does not belong in it as committed. The two Notion URLs are deliberately dummy values for that reason. If you want to keep real secrets in constants, untrack the file first (`git rm --cached build/constants.toml`) so the `.gitignore` entry takes effect, and commit a dummy copy under a different name for reference.
 
-**`build/__main__.py`** reads the TOML file, walks through all `.md` files in `instructions/`, `skills/`, and `scheduled/`, replaces every `[PLACEHOLDER]` with the corresponding value from your constants, and writes the resolved files to an `output/` directory. Skills preserve their folder structure in the output so they can be zipped and uploaded directly.
+**`build/__main__.py`** reads the TOML file, walks through all `.md` files in `instructions/`, `skills/`, and `scheduled-tasks/`, replaces every `[PLACEHOLDER]` with the corresponding value from your constants, and writes the resolved files to an `output/` directory. Skills preserve their folder structure in the output so they can be zipped and uploaded directly.
 
 Requires Python 3.11 or later (it uses `tomllib` from the standard library). To run it:
 
@@ -139,11 +139,11 @@ This material is provided as-is, without warranty of any kind. The author assume
 │       └── SKILL.md
 ├── instructions/
 │   └── *.md
-├── scheduled/
+├── scheduled-tasks/
 │   └── <task-id>.md
 └── output/             # generated files (added during build)
 ```
 
-Filenames in `scheduled/` are the task IDs. Some skills also carry a `references/` or `assets/` subfolder alongside their `SKILL.md`.
+Filenames in `scheduled-tasks/` are the task IDs. Some skills also carry a `references/` or `assets/` subfolder alongside their `SKILL.md`.
 
 **Important:** The entire `output/` directory must stay in `.gitignore`, as it is here. `build/constants.toml` is tracked, so it holds only values I am willing to publish. If you fork this and need real secrets in there, untrack it first.
