@@ -18,7 +18,7 @@ constants = toml.loads(constants_file)
 
 input_files = [
     path
-    for source in ("instructions", "prompts", "skills", "scheduled")
+    for source in ("instructions", "skills", "scheduled")
     for path in Path(source).rglob("*.md")
 ]
 
